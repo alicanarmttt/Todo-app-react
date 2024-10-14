@@ -21,6 +21,16 @@ function App() {
     setTodos(updatedTodos);
   };
 
+  //Todo.jsx içindeki updatedTodo benim üstünde güncelleme yaptığım todo olacak. O yüzden diğerlerini sırayla aynı döndürürken.
+  //updatedTodo yu değiştirip yeni halini döndürecek.
+  const updateTodo = (updatedTodo) => {
+    const updatedTodos = todos.map((todo) => {
+      if (todo.id !== updatedTodo.id) return todo;
+      else return updatedTodo;
+    });
+    setTodos([...updatedTodos]);
+  };
+
   console.log(todos);
   return (
     //TodoCreate componentinden app kompenentine geçiş için childdan parenta erişebileceğimiz propsu burada kullanıyoruz.
@@ -28,7 +38,11 @@ function App() {
       <div className="App">
         <div className="main">
           <TodoCreate onCreateTodo={createTodo}></TodoCreate>
-          <TodoList todos={todos} onDeleteTodo={deleteTodo}></TodoList>
+          <TodoList
+            todos={todos}
+            onDeleteTodo={deleteTodo}
+            onUpdateTodo={updateTodo}
+          ></TodoList>
         </div>
         <div></div>
       </div>
