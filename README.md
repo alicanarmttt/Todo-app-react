@@ -1,13 +1,20 @@
-<<<<<<< HEAD
-# React + Vite
+# Todo App with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Todo application built with **React**. The project demonstrates the core concepts of React such as component-based architecture, state management, and props. 
 
-Currently, two official plugins are available:
+## Features
+- **Add Todos:** Users can add new tasks with a unique ID and description.
+- **Delete Todos:** Tasks can be removed from the list using the delete button.
+- **State Management:** Managed the list of todos using React's `useState` hook.
+- **Props Usage:** Passed functions and data between parent and child components through props.
+- **Component Structure:** Created reusable components such as `TodoCreate`, `TodoList`, and `Todo`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# Todo-app-react
-I created todo app but I used react this time. 
->>>>>>> bb490cc1b0a1dce617fb666eb1a18913c2a19a5f
+## How to Run
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the app with `npm run dev`.
+
+This project serves as a basic example of how to create and manage a to-do list using React, showcasing React’s one-way data flow and component-based structure.
+
+
+![image](https://github.com/user-attachments/assets/d9832d2c-7019-4109-86f5-b01d855c99f8)
